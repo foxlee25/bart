@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="            " />
+
+    <TextView
+        android:id="@+id/textView_inputstation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:textSize="18dp"
+        android:text="Station :" />
+
+    <Spinner
+        android:id="@+id/spinner_stations"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_alignBottom="@+id/textView_inputstation"
+        android:layout_alignTop="@+id/btn_search"
+        android:layout_marginLeft="16dp"
+        android:layout_toLeftOf="@+id/btn_search"
+        android:layout_toRightOf="@+id/textView_inputstation"
+        android:entries="@array/stations_arrays"
+        android:prompt="@string/station_prompt" />
+
+    <ImageButton
+        android:id="@+id/btn_search"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/ic_action_accept"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/textView_bartdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_inputstation"
+        android:layout_alignRight="@+id/btn_search"
+        android:layout_below="@+id/btn_search"
+        android:scrollbars="vertical"
+        android:text="text"
+        android:textSize="20sp" />
+
+</RelativeLayout>

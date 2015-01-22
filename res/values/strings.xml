@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyBartTimer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="station_prompt">Choose a station</string>
+     <string-array name="stations_arrays">
+        <item>12th</item>
+        <item>16th</item>
+        <item>19th</item>
+        <item>24th</item>
+        <item>ashb</item>
+        <item>civc</item>
+        <item>colm</item>
+        <item>conc</item>
+    </string-array>
+ 
+
+</resources>
